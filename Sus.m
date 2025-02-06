@@ -1,10 +1,10 @@
 function NewChrIx = Sus(FitnV,Nsel)
-% SelectIndividuals é€‰æ‹©ä¸ªä½“çš„å‡½æ•°
-% è¾“å…¥ï¼š
-% FitnV - å½“å‰ç§ç¾¤ä¸­ä¸ªä½“çš„é€‚åº”åº¦å€¼
-% Nsel - é€‰æ‹©çš„ä¸ªä½“æ•°é‡
-% è¾“å‡ºï¼š
-% NewChrlx - é€‰æ‹©çš„ä¸ªä½“ç´¢å¼•
+% SelectIndividuals Ñ¡Ôñ¸öÌåµÄº¯Êı
+% ÊäÈë£º
+% FitnV - µ±Ç°ÖÖÈºÖĞ¸öÌåµÄÊÊÓ¦¶ÈÖµ
+% Nsel - Ñ¡ÔñµÄ¸öÌåÊıÁ¿
+% Êä³ö£º
+% NewChrlx - Ñ¡ÔñµÄ¸öÌåË÷Òı
 [Nind,ans]= size(FitnV);
 cumfit = cumsum(FitnV);
 trials = cumfit(Nind) / Nsel * (rand + (0 :Nsel - 1)');
